@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:id="@+id/thanh"
+                android:background="#fffff8f6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Bảng tuần hoàn"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textColor="#ff0006ff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Tìm kiếm chất theo : "
+                    android:id="@+id/textView5"
+                    android:textSize="20dp"
+                    android:textColor="#ff0006ff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Chu kì : "
+                    android:id="@+id/textView6"
+                    android:textSize="20dp"
+                    android:textColor="#ff0006ff" />
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:singleLine="true"
+                    android:background="@drawable/eddittext"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="25dp"
+                    android:id="@+id/chuki" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Nhóm :"
+                    android:id="@+id/textView7"
+                    android:textSize="20dp"
+                    android:textColor="#ff0006ff" />
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:singleLine="true"
+                    android:background="@drawable/eddittext"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="25dp"
+                    android:id="@+id/nhom" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tìm kiếm"
+                    android:id="@+id/button2"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listView2"
+                    android:background="#ffffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textView8"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="100dp"
+                    android:textColor="#ff0006ff"
+                    android:background="#fff8fff1" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#fffff5e1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Số hiệu n.tử "
+                            android:id="@+id/textView9"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Tên nguyên tố"
+                            android:id="@+id/textView10"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Nhóm :"
+                            android:id="@+id/textView11"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chu kì : "
+                            android:id="@+id/textView12"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Loại : "
+                            android:id="@+id/textView13"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView14"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView15"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView16"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView17"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/textView18"
+                            android:layout_weight="1"
+                            android:textColor="#ff0006ff"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Cấu hình electron"
+                    android:id="@+id/textView19"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30dp"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ff0006ff"
+                    android:background="#fff7ffeb" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView20"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#ff0006ff"
+                    android:background="#fff7ffeb" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
